@@ -1,0 +1,30 @@
+{
+    "name": "bluemesa/storage-bundle",
+    "type": "symfony-bundle",
+    "description": "Storage bundle for BlueMesa projects",
+    "keywords": ["bluemesa", "storage"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Radoslaw Kamil Ejsmont",
+            "email": "radoslaw@ejsmont.net"
+        },
+        {
+            "name": "Community contributions",
+            "homepage": "https://github.com/BlueMesa/StorageBundle/graphs/contributors"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Bluemesa\\Bundle\\StorageBundle\\": ""
+        }
+    },
+    "require": {
+        "php": ">=5.6.0",
+        "symfony/framework-bundle": "~2.7",
+        "jms/di-extra-bundle": "~1.6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.0"
+    }
+}

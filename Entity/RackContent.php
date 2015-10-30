@@ -12,6 +12,7 @@
 namespace Bluemesa\Bundle\StorageBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Bluemesa\Bundle\CoreBundle\Entity\Entity;
 
 
 /**
@@ -21,7 +22,7 @@ use Doctrine\ORM\Mapping as ORM;
  *
  * @author Radoslaw Kamil Ejsmont <radoslaw@ejsmont.net>
  */
-abstract class RackContent implements RackContentInterface
+abstract class RackContent extends Entity implements RackContentInterface
 {
     use RackContentTrait;
 }

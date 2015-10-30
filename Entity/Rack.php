@@ -14,7 +14,7 @@ namespace Bluemesa\Bundle\StorageBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 use Doctrine\Common\Collections\ArrayCollection;
-
+use Bluemesa\Bundle\CoreBundle\Entity\Entity;
 
 /**
  * Rack class
@@ -23,7 +23,7 @@ use Doctrine\Common\Collections\ArrayCollection;
  *
  * @author Radoslaw Kamil Ejsmont <radoslaw@ejsmont.net>
  */
-abstract class Rack implements RackInterface
+abstract class Rack extends Entity implements RackInterface
 {
     use RackTrait;
     

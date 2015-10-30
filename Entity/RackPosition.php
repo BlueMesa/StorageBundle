@@ -14,6 +14,8 @@ namespace Bluemesa\Bundle\StorageBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
+use Bluemesa\Bundle\CoreBundle\Entity\Entity;
+
 
 /**
  * RackPosition class
@@ -22,7 +24,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  *
  * @author Radoslaw Kamil Ejsmont <radoslaw@ejsmont.net>
  */
-abstract class RackPosition implements RackPositionInterface
+abstract class RackPosition extends Entity implements RackPositionInterface
 {
     use RackPositionTrait;
     

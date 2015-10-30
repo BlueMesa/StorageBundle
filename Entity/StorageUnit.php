@@ -13,6 +13,8 @@ namespace Bluemesa\Bundle\StorageBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
+use Bluemesa\Bundle\CoreBundle\Entity\Entity;
+
 
 /**
  * StorageUnit class
@@ -21,7 +23,7 @@ use Doctrine\ORM\Mapping as ORM;
  *
  * @author Radoslaw Kamil Ejsmont <radoslaw@ejsmont.net>
  */
-abstract class StorageUnit implements StorageUnitInterface
+abstract class StorageUnit extends Entity implements StorageUnitInterface
 {
     use StorageUnitTrait;
     

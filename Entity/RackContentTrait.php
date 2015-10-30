@@ -17,7 +17,7 @@ namespace Bluemesa\Bundle\StorageBundle\Entity;
  *
  * @author Radoslaw Kamil Ejsmont <radoslaw@ejsmont.net>
  */
-abstract class RackContentTrait
+trait RackContentTrait
 {
     /**
      * Get the name of position property

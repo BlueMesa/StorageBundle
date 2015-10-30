@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Bluemesa\StorageBundle\Entity;
+namespace Bluemesa\Bundle\StorageBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
@@ -29,7 +29,7 @@ abstract class RackPosition implements RackPositionInterface
     /**
      * Construct RackPosition
      *
-     * @param Bluemesa\StorageBundle\Entity\RackInterface   $rack
+     * @param Bluemesa\Bundle\StorageBundle\Entity\RackInterface   $rack
      * @param integer|string                                $row
      * @param integer                                       $column
      */

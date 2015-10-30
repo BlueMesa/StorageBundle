@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Bluemesa\StorageBundle\Entity;
+namespace Bluemesa\Bundle\StorageBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
@@ -142,7 +142,7 @@ trait RackPositionTrait
     /**
      * Get rack
      *
-     * @return Bluemesa\StorageBundle\Entity\RackInterface
+     * @return Bluemesa\Bundle\StorageBundle\Entity\RackInterface
      */
     public function getRack()
     {
@@ -152,7 +152,7 @@ trait RackPositionTrait
     /**
      * Set rack
      * 
-     * @param Bluemesa\StorageBundle\Entity\RackInterface $rack
+     * @param Bluemesa\Bundle\StorageBundle\Entity\RackInterface $rack
      */
     protected function setRack(RackInterface $rack)
     {
@@ -162,7 +162,7 @@ trait RackPositionTrait
     /**
      * Get content
      *
-     * @return Bluemesa\StorageBundle\Entity\ContentInterface
+     * @return Bluemesa\Bundle\StorageBundle\Entity\ContentInterface
      */
     public function getContent()
     {
@@ -172,7 +172,7 @@ trait RackPositionTrait
     /**
      * Set content
      *
-     * @param Bluemesa\StorageBundle\Entity\ContentInterface $contents
+     * @param Bluemesa\Bundle\StorageBundle\Entity\ContentInterface $contents
      */
     public function setContent(RackContentInterface $contents = null)
     {
@@ -200,7 +200,7 @@ trait RackPositionTrait
     /**
      * Set previous contents
      *
-     * @param Bluemesa\StorageBundle\Entity\ContentInterface $prevContent
+     * @param Bluemesa\Bundle\StorageBundle\Entity\ContentInterface $prevContent
      */
     public function setPreviousContent(RackContentInterface $previousContent = null)
     {

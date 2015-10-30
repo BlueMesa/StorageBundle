@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Bluemesa\StorageBundle\Entity;
+namespace Bluemesa\Bundle\StorageBundle\Entity;
 
 
 /**
@@ -22,14 +22,14 @@ interface StorageUnitContentInterface extends ContentInterface
     /**
      * Get storage unit
      *
-     * @return Bluemesa\StorageBundle\Entity\StorageUnitInterface
+     * @return Bluemesa\Bundle\StorageBundle\Entity\StorageUnitInterface
      */
     public function getStorageUnit();
     
     /**
      * Set storage unit
      *
-     * @param Bluemesa\StorageBundle\Entity\StorageUnitInterface $unit
+     * @param Bluemesa\Bundle\StorageBundle\Entity\StorageUnitInterface $unit
      */
     public function setStorageUnit(StorageUnitInterface $unit = null);
 }

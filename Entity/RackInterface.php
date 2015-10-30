@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Bluemesa\StorageBundle\Entity;
+namespace Bluemesa\Bundle\StorageBundle\Entity;
 
 
 /**
@@ -24,7 +24,7 @@ interface RackInterface extends StorageUnitInterface
      *
      * @param  string   $row
      * @param  integer  $column
-     * @return Bluemesa\StorageBundle\Entity\RackPositionInterface
+     * @return Bluemesa\Bundle\StorageBundle\Entity\RackPositionInterface
      * @throws OutOfBoundsException
      */
     public function getPosition($row, $column);
@@ -63,14 +63,14 @@ interface RackInterface extends StorageUnitInterface
      *
      * @param string   $row
      * @param integer  $column
-     * @return Bluemesa\StorageBundle\Entity\RackContentInterface
+     * @return Bluemesa\Bundle\StorageBundle\Entity\RackContentInterface
      */
     public function getContent($row, $column);
 
     /**
      * Add content (to first empty position)
      *
-     * @param  Bluemesa\StorageBundle\Entity\RackContentInterface  $content
+     * @param  Bluemesa\Bundle\StorageBundle\Entity\RackContentInterface  $content
      * @param  string                                              $row
      * @param  integer                                             $column
      * @return boolean
@@ -80,7 +80,7 @@ interface RackInterface extends StorageUnitInterface
     /**
      * Remove content
      *
-     * @param Bluemesa\StorageBundle\Entity\RackContentInterface  $content
+     * @param Bluemesa\Bundle\StorageBundle\Entity\RackContentInterface  $content
      */
     public function removeContent(RackContentInterface $content);
 
@@ -89,7 +89,7 @@ interface RackInterface extends StorageUnitInterface
      *
      * @param string                                              $row
      * @param integer                                             $column
-     * @param Bluemesa\StorageBundle\Entity\RackContentInterface  $content
+     * @param Bluemesa\Bundle\StorageBundle\Entity\RackContentInterface  $content
      */
     public function replaceContent($row, $column, RackContentInterface $content = null);
 
@@ -102,7 +102,7 @@ interface RackInterface extends StorageUnitInterface
     /**
      * Check if content is in the rack
      *
-     * @param  Bluemesa\StorageBundle\Entity\RackContentInterface  $content
+     * @param  Bluemesa\Bundle\StorageBundle\Entity\RackContentInterface  $content
      * @return boolean
      */
     public function hasContent(RackContentInterface $content);

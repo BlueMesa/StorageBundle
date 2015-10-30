@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Bluemesa\StorageBundle\Entity;
+namespace Bluemesa\Bundle\StorageBundle\Entity;
 
 
 /**
@@ -36,7 +36,7 @@ abstract class RackContentTrait
     /**
      * Get position
      *
-     * @return Bluemesa\StorageBundle\Entity\RackPositionInterface
+     * @return Bluemesa\Bundle\StorageBundle\Entity\RackPositionInterface
      */
     public function getPosition()
     {
@@ -46,7 +46,7 @@ abstract class RackContentTrait
     /**
      * Set position
      *
-     * @param Bluemesa\StorageBundle\Entity\RackPositionInterface $position
+     * @param Bluemesa\Bundle\StorageBundle\Entity\RackPositionInterface $position
      */
     public function setPosition(RackPositionInterface $position = null)
     {
@@ -64,7 +64,7 @@ abstract class RackContentTrait
     /**
      * Get previous position
      *
-     * @return Bluemesa\StorageBundle\Entity\RackPositionInterface
+     * @return Bluemesa\Bundle\StorageBundle\Entity\RackPositionInterface
      */
     public function getPreviousPosition()
     {
@@ -74,7 +74,7 @@ abstract class RackContentTrait
     /**
      * Set previous position
      *
-     * @param Bluemesa\StorageBundle\Entity\RackPositionInterface $previousPosition
+     * @param Bluemesa\Bundle\StorageBundle\Entity\RackPositionInterface $previousPosition
      */
     public function setPreviousPosition(RackPositionInterface $previousPosition = null)
     {
@@ -84,7 +84,7 @@ abstract class RackContentTrait
     /**
      * Get rack
      *
-     * @return Bluemesa\StorageBundle\Entity\RackInterface
+     * @return Bluemesa\Bundle\StorageBundle\Entity\RackInterface
      */
     public function getRack()
     {
@@ -96,7 +96,7 @@ abstract class RackContentTrait
     /**
      * Set rack
      *
-     * @param Bluemesa\StorageBundle\Entity\RackInterface $rack
+     * @param Bluemesa\Bundle\StorageBundle\Entity\RackInterface $rack
      */
     public function setRack(RackInterface $rack = null)
     {

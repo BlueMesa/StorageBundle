@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Bluemesa\StorageBundle\Entity;
+namespace Bluemesa\Bundle\StorageBundle\Entity;
 
 
 /**
@@ -45,21 +45,21 @@ interface RackPositionInterface
     /**
      * Get rack
      *
-     * @return Bluemesa\StorageBundle\Entity\RackInterface
+     * @return Bluemesa\Bundle\StorageBundle\Entity\RackInterface
      */
     public function getRack();
 
     /**
      * Get content
      *
-     * @return Bluemesa\StorageBundle\Entity\ContentInterface
+     * @return Bluemesa\Bundle\StorageBundle\Entity\ContentInterface
      */
     public function getContent();
     
     /**
      * Set content
      *
-     * @param Bluemesa\StorageBundle\Entity\ContentInterface $contents
+     * @param Bluemesa\Bundle\StorageBundle\Entity\ContentInterface $contents
      */
     public function setContent(RackContentInterface $contents = null);
 
@@ -73,7 +73,7 @@ interface RackPositionInterface
     /**
      * Set previous contents
      *
-     * @param Bluemesa\StorageBundle\Entity\ContentInterface $prevContent
+     * @param Bluemesa\Bundle\StorageBundle\Entity\ContentInterface $prevContent
      */
     public function setPreviousContent(RackContentInterface $previousContent = null);
 }

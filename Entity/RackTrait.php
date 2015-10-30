@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Bluemesa\StorageBundle\Entity;
+namespace Bluemesa\Bundle\StorageBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 
@@ -51,7 +51,7 @@ trait RackTrait
      *
      * @param  string                                         $row
      * @param  integer                                        $column
-     * @return Bluemesa\StorageBundle\Entity\RackPositionInterface
+     * @return Bluemesa\Bundle\StorageBundle\Entity\RackPositionInterface
      * @throws OutOfBoundsException
      */
     public function getPosition($row, $column)
@@ -130,7 +130,7 @@ trait RackTrait
      *
      * @param  string                                        $row
      * @param  integer                                       $column
-     * @return Bluemesa\StorageBundle\Entity\RackContentInterface
+     * @return Bluemesa\Bundle\StorageBundle\Entity\RackContentInterface
      */
     public function getContent($row, $column)
     {
@@ -157,7 +157,7 @@ trait RackTrait
     /**
      * Add content (to first empty position)
      *
-     * @param  Bluemesa\StorageBundle\Entity\RackContentInterface $content
+     * @param  Bluemesa\Bundle\StorageBundle\Entity\RackContentInterface $content
      * @param  string                                        $row
      * @param  integer                                       $column
      * @return boolean
@@ -178,7 +178,7 @@ trait RackTrait
     /**
      * Remove content
      *
-     * @param Bluemesa\StorageBundle\Entity\RackContentInterface $content
+     * @param Bluemesa\Bundle\StorageBundle\Entity\RackContentInterface $content
      */
     public function removeContent(RackContentInterface $content)
     {
@@ -194,7 +194,7 @@ trait RackTrait
      *
      * @param string                                              $row
      * @param integer                                             $column
-     * @param Bluemesa\StorageBundle\Entity\RackContentInterface  $content
+     * @param Bluemesa\Bundle\StorageBundle\Entity\RackContentInterface  $content
      */
     public function replaceContent($row, $column, RackContentInterface $content = null)
     {
@@ -215,7 +215,7 @@ trait RackTrait
     /**
      * Check if content is in the rack
      *
-     * @param  Bluemesa\StorageBundle\Entity\RackContentInterface $content
+     * @param  Bluemesa\Bundle\StorageBundle\Entity\RackContentInterface $content
      * @return boolean
      */
     public function hasContent(RackContentInterface $content)
@@ -239,7 +239,7 @@ trait RackTrait
      *
      * @param  string                               $row
      * @param  integer                              $column
-     * @return Bluemesa\StorageBundle\Entity\RackPosition
+     * @return Bluemesa\Bundle\StorageBundle\Entity\RackPosition
      * @throws OutOfBoundsException
      */
     protected function getFirstEmptyPosition($row = null, $column = null)
@@ -259,7 +259,7 @@ trait RackTrait
      *
      * @param string                                         $row
      * @param integer                                        $column
-     * @param Bluemesa\StorageBundle\Entity\ContentInterface $content
+     * @param Bluemesa\Bundle\StorageBundle\Entity\ContentInterface $content
      */
     protected function setPosition($row, $column, RackContentInterface $content = null)
     {

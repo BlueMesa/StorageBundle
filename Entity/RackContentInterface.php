@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Bluemesa\StorageBundle\Entity;
+namespace Bluemesa\Bundle\StorageBundle\Entity;
 
 
 /**
@@ -22,42 +22,42 @@ interface RackContentInterface extends ContentInterface
     /**
      * Get position
      *
-     * @return Bluemesa\StorageBundle\Entity\RackPositionInterface
+     * @return Bluemesa\Bundle\StorageBundle\Entity\RackPositionInterface
      */
     public function getPosition();
 
     /**
      * Set position
      *
-     * @param Bluemesa\StorageBundle\Entity\RackPositionInterface $position
+     * @param Bluemesa\Bundle\StorageBundle\Entity\RackPositionInterface $position
      */
     public function setPosition(RackPositionInterface $position = null);
     
     /**
      * Get previous position
      *
-     * @return Bluemesa\StorageBundle\Entity\RackPositionInterface
+     * @return Bluemesa\Bundle\StorageBundle\Entity\RackPositionInterface
      */
     public function getPreviousPosition();
 
     /**
      * Set previous position
      *
-     * @param Bluemesa\StorageBundle\Entity\RackPositionInterface $prevPosition
+     * @param Bluemesa\Bundle\StorageBundle\Entity\RackPositionInterface $prevPosition
      */
     public function setPreviousPosition(RackPositionInterface $prevPosition = null);
     
     /**
      * Get rack
      *
-     * @return Bluemesa\StorageBundle\Entity\RackInterface
+     * @return Bluemesa\Bundle\StorageBundle\Entity\RackInterface
      */
     public function getRack();
 
     /**
      * Set rack
      *
-     * @param Bluemesa\StorageBundle\Entity\RackInterface $rack
+     * @param Bluemesa\Bundle\StorageBundle\Entity\RackInterface $rack
      */
     public function setRack(RackInterface $rack = null);
 }

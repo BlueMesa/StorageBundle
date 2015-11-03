@@ -36,7 +36,6 @@ abstract class Rack extends Entity implements RackInterface
     public function __construct($rows = null, $columns = null)
     {
         $this->{$this->getPositionsProperty()} = new ArrayCollection();
-        $this->name = 'New rack';
         $this->setGeometry($rows, $columns);
     }
     

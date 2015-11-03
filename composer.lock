@@ -13,7 +13,7 @@
             "source": {
                 "type": "git",
                 "url": "../core-bundle/",
-                "reference": "c6e5fbf50f74f8a6e3c8aac40bf61560f99ea92d"
+                "reference": "2d4161352049445ad1aadf9c5417fd3abd8b9818"
             },
             "require": {
                 "doctrine/common": "^2.4.8",
@@ -50,7 +50,7 @@
                 "bluemesa",
                 "core"
             ],
-            "time": "2015-10-30 10:00:09"
+            "time": "2015-11-02 16:14:30"
         },
         {
             "name": "doctrine/annotations",

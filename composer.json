@@ -21,7 +21,7 @@
     },
     "require": {
         "php": ">=5.6.0",
-        "symfony/framework-bundle": "~2.7",
+        "symfony/framework-bundle": "~3.0",
         "bluemesa/core-bundle": "dev-master"
     },
     "require-dev": {
